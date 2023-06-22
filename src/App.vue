@@ -1,30 +1,46 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <Navbar :logo="logo_src" :alt="app_name" />
+  <router-view />
+  <Footer />
 </template>
 
+<script>
+import Navbar from "./components/Navbar.vue";
+import Footer from "./components/Footer.vue";
+
+export default {
+  components: { Navbar, Footer },
+  data() {
+    return {
+      logo_src: "/img/logo.png",
+      app_name: "Make Your Burger",
+    };
+  },
+  mounted() {
+    document.title = "Make Your Burger";
+  },
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  margin: 50px;
+  min-height: 400px;
+}
+
+h1 {
   text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: #222;
 }
 </style>

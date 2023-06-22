@@ -1,0 +1,130 @@
+{
+  "ingredientes": {
+    "paes": [
+      {
+        "id": 1,
+        "tipo": "White Italian"
+      },
+      {
+        "id": 2,
+        "tipo": "3 Cheese"
+      },
+      {
+        "id": 3,
+        "tipo": "Parmesan and Oregano"
+      },
+      {
+        "id": 4,
+        "tipo": "Whole Wheat"
+      }
+    ],
+    "carnes": [
+      {
+        "id": 1,
+        "tipo": "Rump Steak"
+      },
+      {
+        "id": 2,
+        "tipo": "Top Sirloin"
+      },
+      {
+        "id": 3,
+        "tipo": "Picanha"
+      },
+      {
+        "id": 4,
+        "tipo": "Veggie Burger"
+      }
+    ],
+    "opcionais": [
+      {
+        "id": 1,
+        "tipo": "Bacon"
+      },
+      {
+        "id": 2,
+        "tipo": "Cheddar"
+      },
+      {
+        "id": 3,
+        "tipo": "Salami"
+      },
+      {
+        "id": 4,
+        "tipo": "Tomato"
+      },
+      {
+        "id": 4,
+        "tipo": "Red Onion"
+      },
+      {
+        "id": 4,
+        "tipo": "Cucumber"
+      }
+    ]
+  },
+  "status": [
+    {
+      "id": 1,
+      "tipo": "Requested"
+    },
+    {
+      "id": 2,
+      "tipo": "In Production"
+    },
+    {
+      "id": 3,
+      "tipo": "Finished"
+    }
+  ],
+  "burgers": [
+    {
+      "nome": "John",
+      "carne": "Veggie Burger",
+      "pao": "3 Cheese",
+      "opcionais": [
+        "Bacon"
+      ],
+      "status": "In Production",
+      "id": 1
+    },
+    {
+      "nome": "Maria",
+      "carne": "Top Sirloin",
+      "pao": "Parmesan and Oregano",
+      "opcionais": [
+        "Salami",
+        "Tomato",
+        "Cheddar",
+        "Cucumber",
+        "Red Onion",
+        "Bacon"
+      ],
+      "status": "Requested",
+      "id": 2
+    },
+    {
+      "nome": "Jorge",
+      "carne": "Rump Steak",
+      "pao": "White Italian",
+      "opcionais": [
+        "Bacon",
+        "Cheddar",
+        "Tomato"
+      ],
+      "status": "Solicitado",
+      "id": 3
+    },
+    {
+      "nome": "August",
+      "carne": "Picanha",
+      "pao": "White Italian",
+      "opcionais": [
+        "Cucumber",
+        "Salami"
+      ],
+      "status": "Solicitado",
+      "id": 4
+    }
+  ]
+}
