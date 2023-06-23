@@ -60,4 +60,6 @@ npm run build
 
 The compiled and minified files will be stored in the dist/ directory.
 
+![Website Print](./public/img/site.png)
+
 That's it! You have successfully set up the Make Your Burger application. Enjoy making burger orders through the API requests!
